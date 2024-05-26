@@ -34,6 +34,10 @@ header {
     color: black;
     margin-right: 30px;   
 }
+.top_menu a:hover {
+    color: #D97652;
+}
+
 #dwn {
     width: 140px;
     height: 50px;
@@ -149,7 +153,7 @@ main img {
 .middle_2 span {
     color: #D97652;
 }
-#img_li1 {
+/* #img_li1 {
     display: flex;
     margin-left: 320px;
 }
@@ -167,17 +171,8 @@ main img {
     border-radius: 30px;
     margin-right: 72px;
     filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 25%));
-}
-#img_li1 {
-    display: flex;
-    margin-left: 320px;
-}
-#img_li1 img {
-    border-radius: 30px;
-    margin-right: 72px;
-    margin-bottom: 72px;
-    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 25%));
-}
+} */
+
 
 #show {
     width: 143px;
@@ -194,6 +189,49 @@ main img {
 #show:hover {
     background: #cf5428;
 }
+
+.list-pic {
+    display: flex;
+    list-style: none;
+    width: 1278px;
+    margin-left: 320px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.list-pic img {
+    width: 378px;
+    height: 378px;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-right: 30px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 25%));
+}
+/*불러와지는 이미지*/
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 378px;
+    height: 378px;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-right: 30px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 25%));
+}
+
+
 
 #ce {
     font-weight: 700;
