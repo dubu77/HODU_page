@@ -282,13 +282,13 @@ iframe {
     display: flex;
     align-content: baseline;
 }
-#blog p:first-of-type {
+#blog h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 45px;
     margin-bottom: 18px;
 }
-#blog P:last-of-type {
+#blog p {
     font-weight: 400;
     font-size: 14px;
 }
@@ -373,7 +373,7 @@ footer div a {
 #popup img {
     margin: 60px 245px 24px 245px;
 }
-#popup p:first-of-type {
+#popup h3 {
     color: #D97652;
     font-weight: 700;
     font-size: 36px;
@@ -381,7 +381,7 @@ footer div a {
     text-align: center;
     margin-bottom: 12px;
 }
-#popup p:last-of-type {
+#popup p {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -411,7 +411,7 @@ footer div a {
 /* 스크롤 탑 버튼(동그라미) */
 #scrtop {
     right: 50px;
-    top: 700px;
+    top: 900px;
     width: 50px;
     height: 50px;
     position: fixed;
