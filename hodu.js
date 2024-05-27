@@ -7,5 +7,11 @@ $(document).ready(function(){
     $("#popbtn").click(function(){
         $("#popup").fadeOut();
     });
-	
+	$("#dwn").click(function(){
+        alert("아직 기능이 없습니다.");
+    });
+    $("#dwn2").click(function(){
+        alert("아직 기능이 없습니다.");
+        
+    });
 });///// 끝
