@@ -9,7 +9,17 @@
     <link rel="shortcut icon" href="./image/favicon.png">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="hodu.js"></script>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1f3198977981ad821be57a2826b1b140"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1f3198977981ad821be57a2826b1b140"></script>
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = { 
+                center: new kakao.maps.LatLng(33.442279, 126.571466), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+        var map = new kakao.maps.Map(mapContainer, mapOption); 
+        </script>
 </head>
 <body>
     <div id="layout">
@@ -74,17 +84,7 @@
             <h2>Where you'll be</h2>
             <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
             <!-- 지도 표시 -->
-            <div id="map" style="width:1278px; height:520px;"></div>
-            <script>
-                var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-                    mapOption = { 
-                        center: new kakao.maps.LatLng(33.442279, 126.571466), // 지도의 중심좌표
-                        level: 3 // 지도의 확대 레벨
-                    };
-        
-                // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-                var map = new kakao.maps.Map(mapContainer, mapOption); 
-                </script>
+            <div id="map" style="width:1278px; height:520px; margin-bottom: 180px;"></div>
             <!-- 지도 아래 고양이 -->
             <div class="img_wrap">
                 <img src="./image/img_5.png" alt="위쪽을 바라보고 있는 고양이 호두의 얼굴 윗부분이 약 투명도 80%정도로 보이고 있는 사진으로 눈망울과 코가 매우 잘 보인다">
